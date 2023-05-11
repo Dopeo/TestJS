@@ -1,4 +1,4 @@
-const url = "https://script.google.com/macros/s/AKfycbxDhgYQej60BEluWyMgyi6F0kA07qKzEQLysNaMyS1cj_wzx-INY51LA241RE8we2-zEA/exec"
+const url = "https://script.google.com/macros/s/AKfycbyJH1oP9di4DaHEW8B7ClPnVovirr72jNU66g5ah_QMDMg9X9iXzxhbe4q8sXYGVRenrw/exec"
 
 
 function testGS(){
@@ -11,4 +11,19 @@ function testGS(){
 
 }
 
+function addGS(){
+
+
+  fetch(url, {
+      method: 'POST',
+      mode: 'no-cors',
+      cache: 'no-cache',
+      headers: {'content-Type' : 'application/json'},
+      redirect: 'follow',
+      body: JSON.stringify({name:"adam"})
+  });
+
+}
+
+document.getElementById("btn2").addEventListener("click", addGS);
 document.getElementById("btn").addEventListener("click", testGS);
