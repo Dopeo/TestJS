@@ -20,7 +20,7 @@ function addGS(){
       cache: 'no-cache',
       headers: {'content-Type' : 'application/json'},
       redirect: 'follow',
-      body: JSON.stringify({name:"adam"})
+      body: JSON.stringify({first:"jake",email:"jCookie@gmail.com",last:"Cookie"})
   });
 
 }
