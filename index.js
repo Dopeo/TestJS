@@ -13,7 +13,7 @@ function afterSubmit(e){
   e.preventDefault();
   if (customerForm.checkValidity() === false) {
     event.stopPropagation();
-    for(field of customerForm.elements) {
+    for(let field of customerForm.elements) {
       if(!field.checkValidity()){
         field.classList.add("is-invalid");
       }
@@ -21,7 +21,7 @@ function afterSubmit(e){
     return;
   }
 
-  for(field of customerForm.elements) {
+  for(let field of customerForm.elements) {
       field.classList.remove("is-invalid");
     }
   
